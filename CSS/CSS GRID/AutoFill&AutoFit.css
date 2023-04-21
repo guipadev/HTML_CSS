@@ -1,0 +1,14 @@
+.contenedor{
+    display: grid;
+    grid-gap:20px;
+
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /*rid-template-columns: repeat(auto-fill, minmax(100px, 1fr));*/
+}
+    /*
+    auto-fill se limita al espacio asignado por uno
+    y deja el espacio restante libre
+
+    auto-fit se limita tambien al espacio pero ocupa
+    todo el espacio libre con los elementos
+    */

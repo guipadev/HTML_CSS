@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.col-center {
+    width: 960px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+}
+
+.redes {
+    float: right;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.redes li {
+    float: left;
+    margin-left: 10px;
+}
+
+header {
+    height: 80px;
+}
+
+.section-top {
+    background-image: url('../imagenes/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding-top: 40px;
+}
+
+.content-left {
+    float: left;
+    width: 580px;
+    color: #fff;
+    background-color: rgb(0, 0, 0, .4);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.content-right {
+    float: right;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, .4);
+    color: #fff;
+    padding: 10px;
+}
+
+.input {
+    width: 280px;
+    padding: 8px;
+}
+
+.button {
+    background-color: #00aced;
+    padding: 8px;
+    color: #fff;
+    border: 0px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,150 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:SA Pacific Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0500
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Janeth Triana Prieto:mailto:janeth_triana@gecolsa.com.co
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Dilmer Hum
+ berto Bautista Carranza:mailto:Dilmer_Bautista@gecolsa.com.co
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=nataliafon
+ secavasquez@gmail.com:mailto:nataliafonsecavasquez@gmail.com
+DESCRIPTION;LANGUAGE=es-ES:Buen día Natalia y Dilmer\,\n\nAdjunto link par
+ a la realización de la videoconferencia:\n_______________________________
+ _________________________________________________\nUnirse a reunión de Mi
+ crosoft Teams<https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmUwM
+ 2ExZjMtOWI5OC00N2NjLWIwYzItMDJiMTVmZDlmZmJj%40thread.v2/0?context=%7b%22Ti
+ d%22%3a%22f49f6ea8-e3b5-4fc6-94e9-be98a5e9b02e%22%2c%22Oid%22%3a%223afa59f
+ 4-9e5c-459f-a9c7-bd0aec7a2e0b%22%7d>\nMás información sobre Teams<https:
+ //aka.ms/JoinTeamsMeeting> | Opciones de la reunión<https://teams.microso
+ ft.com/meetingOptions/?organizerId=3afa59f4-9e5c-459f-a9c7-bd0aec7a2e0b&te
+ nantId=f49f6ea8-e3b5-4fc6-94e9-be98a5e9b02e&threadId=19_meeting_NmUwM2ExZj
+ MtOWI5OC00N2NjLWIwYzItMDJiMTVmZDlmZmJj@thread.v2&messageId=0&language=es-E
+ S>\n______________________________________________________________________
+ __________\n\nQuedo atenta a cualquier inquietud.\n\nCordialmente\,\n\nJan
+ eth Triana Prieto\nAnalista Selección\nGECOLSA\nAvenida Américas #42A - 
+ 21\nBogotá - Colombia\nTel. Oficina. + 571 4055554 Ext. 21028\nTel. Celul
+ ar. + 57 3153845614\nCorreo: Janeth_triana@gecolsa.com.co<mailto:kristin_s
+ julson@gecolsa.com.co>\nPágina web: www.gecolsa.com<mailto:kristin_sjulso
+ n@gecolsa.com.co>\n\nEste correo electrónico\, incluyendo archivos adjunt
+ os y / o datos\, puede contener información confidencial y / o reservada\
+ , y puede ser usada solamente por la persona o entidad a quien va dirigida
+ . Si el lector de este mensaje no es el destinatario o su agente autorizad
+ o\,  se le notifica al lector que  cualquier divulgación\, distribución 
+ o copia de este e-mail está prohibido. Si usted ha recibido este correo e
+ lectrónico por error\, por favor notifique al remitente respondiendo a es
+ te mensaje y borre este correo.\n\n\n\n\n\nAVISO LEGAL: La información co
+ ntenida en este correo electrónico\, incluyendo archivos adjuntos y / o d
+ atos de cualquier clase\, es totalmente privada\, confidencial\, reservada
+  y además están protegidos legalmente por derechos de propiedad intelect
+ ual/industrial\; solamente puede ser usada por la persona o entidad autori
+ zada a quien va dirigida. Si el lector de este mensaje no es el destinatar
+ io o su agente autorizado\, se le notifica que no podrá usar\, retener\, 
+ imprimir\, copiar\, distribuir o llevar a cabo cualquier clase de divulgac
+ ión de la misma\, so pena de asumir las consecuencias legales correspondi
+ entes. Si usted ha recibido este correo electrónico por error\, por favor
+  notifique al remitente respondiendo a este mensaje que se envió al desti
+ natario equivocado o infórmenos a atencionalcliente@gecolsa.com.co\, borr
+ ando este correo electrónico\, los archivos/datos adjuntos y su respuesta
+  de inmediato de todos los recipientes de su computador o servidor en los 
+ que pueda aparecer. Las opiniones contenidas en este mensaje y en los arch
+ ivos adjuntos\, pertenecen exclusivamente a su remitente y no representan 
+ la opinión de General de equipos de Colombia S.A.- GECOLSA \, salvo que e
+ l remitente del mensaje así lo indique y sea una persona autorizada por G
+ eneral de equipos de Colombia S.A.- GECOLSA para hacerlo. El uso de correo
+  electrónico no garantiza la confidencialidad\, integridad y disponibilid
+ ad del presente mensaje\, en la medida en que es posible que sea manipulad
+ o\, interceptado\, destruido\, llegar con demora\, incompleto\, o con viru
+ s informáticos. En ningún caso General de equipos de Colombia S.A.- GECO
+ LSA es responsable de la ocurrencia de alguno de estos eventos que no le s
+ ean atribuibles\, ni de los daños o perjuicios que los mismos puedan gene
+ rar al receptor o a los archivos existentes en su computador. Dado el car
+ ácter informativo del mensaje y/o de sus archivos adjuntos\, estos no con
+ stituyen oferta comercial\, ni una oferta de compra o venta de bienes ni d
+ e servicios a menos que expresamente así sea manifestado.\n\nLEGAL NOTICE
+ : The information contained in this email\, including attachments and / or
+  data of any kind\, is completely private\, confidential\, reserved and ar
+ e legally protected by intellectual / industrial property rights\; it can 
+ only be used by the authorized person or entity to whom it is addressed. I
+ f the reader of this message is not the addressee or his authorized agent\
+ , he / she is notified that he / she will not be able to use\, retain\, pr
+ int\, copy\, distribute or carry out any kind of disclosure of the same\, 
+ under penalty of assuming the corresponding legal consequences. If you hav
+ e received this email in error\, please notify the sender by replying to t
+ his message that was sent to the wrong recipient or inform us at atenciona
+ lcliente@gecolsa.com.co\, delete this email\, the files / attachments and 
+ your reply immediately from all the recipients of your computer or server 
+ where it may appear. The opinions contained in this message and in the att
+ achments belong exclusively to its sender and do not represent the opinion
+  of General de Equipos de Colombia S.A.- GECOLSA\, unless the sender of th
+ e message explicitly indicates so and he / she is an authorized spokespers
+ on designated by General de equipos de Colombia S.A.- GECOLSA. The use of 
+ electronic mail does not guarantee the confidentiality\, integrity and ava
+ ilability of this message\, insofar as it is possible that it is manipulat
+ ed\, intercepted\, destroyed\, arrived late\, incomplete\, or with compute
+ r viruses. In no case General de equipos de Colombia S.A.- GECOLSA is resp
+ onsible for the occurrence of any of these events that are not attributabl
+ e to you\, nor for the damages or losses that may be generated to the rece
+ iver or to the files on its computer or infrastructure. Given the informat
+ ive nature of the message and / or its attachments\, these do not constitu
+ te a commercial offer\, nor an offer to purchase or sell goods or services
+  unless expressly stated.\n
+UID:040000008200E00074C5B7101A82E0080000000080A23FC78BD7D501000000000000000
+ 010000000CC6ACAF35A93B64DB002C41ED6EBCA62
+SUMMARY;LANGUAGE=es-ES:Entrevista Natalia Fonseca - GECOLSA
+DTSTART;TZID=SA Pacific Standard Time:20200131T140000
+DTEND;TZID=SA Pacific Standard Time:20200131T144500
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20200130T213902Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=es-ES:Reunión de Microsoft Teams
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:1358829540
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_NmUwM2ExZjMtOWI5OC00N2NjLWIwYzItMDJiMTVmZDlmZmJj%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22f49f6ea8-e3b5-4fc6-94e9-be98a5e9b02e%22%2c%22O
+ id%22%3a%223afa59f4-9e5c-459f-a9c7-bd0aec7a2e0b%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://scheduler.teams.microsoft.co
+ m/teams/f49f6ea8-e3b5-4fc6-94e9-be98a5e9b02e/3afa59f4-9e5c-459f-a9c7-bd0ae
+ c7a2e0b/19_meeting_NmUwM2ExZjMtOWI5OC00N2NjLWIwYzItMDJiMTVmZDlmZmJj@thread
+ .v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_NmUwM2ExZjMtOWI5OC00N2N
+ jLWIwYzItMDJiMTVmZDlmZmJj@thread.v2"\,"private":true\,"type":0\,"mid":0\,"
+ rid":0\,"uid":null}
+X-MICROSOFT-ONLINEMEETINGCONFLINK:conf:sip:janeth_triana@gecolsa.com.co\;gr
+ uu\;opaque=app:conf:focus:id:teams:2:0!19:meeting_NmUwM2ExZjMtOWI5OC00N2Nj
+ LWIwYzItMDJiMTVmZDlmZmJj-thread.v2!3afa59f49e5c459fa9c7bd0aec7a2e0b!f49f6e
+ a8e3b54fc694e9be98a5e9b02e
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Reunión de Microsoft Teams"\,"Locat
+ ionAnnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":"
+ "\,"LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Loc
+ ationFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

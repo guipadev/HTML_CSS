@@ -1,0 +1,348 @@
+        * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: black;
+        color: #d8dee4d8;
+    }
+    
+    #container {
+        max-width: 1300px;
+        height: auto;
+        margin: 2px auto;
+        padding: 1px;
+        border: 2px solid white;
+        border-radius: 15px;
+        font-family: verdana, sans-serif;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    header {
+        width: 98%;
+        height: auto;
+        margin: 3px auto;
+        padding: 1px;
+        border: 2px solid black;
+        background: #6441a5;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradi#6441a5, #2a0845);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to ri#2a0845);
+        /* W3C, IE 10+/ Edge, Firefox 16+Opera 12+, Safari 7+ */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav {
+        width: 98%;
+        height: auto;
+        margin: 3px auto;
+        padding: 1px;
+        border: 2px solid black;
+        background: #948E99;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradi#2E1437, #948E99);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to ri#948E99);
+        /* W3C, IE 10+/ Edge, Firefox 16+Opera 12+, Safari 7+ */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #principal {
+        width: 98%;
+        height: auto;
+        margin: 3px auto;
+        padding: 1px;
+        border: 2px solid black;
+        background-color: #F4FAD2;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #principal section {
+        width: 80%;
+        height: auto;
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+        background: #0f0c29;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradi#24243e, #302b63, #0f0c29);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to ri#302b63, #0f0c29);
+        /* W3C, IE 10+/ Edge, Firefox 16+Opera 12+, Safari 7+ */
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #principal aside {
+        width: 20%;
+        height: auto;
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+        background: #780206;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradi#061161, #780206);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to ri#780206);
+        /* W3C, IE 10+/ Edge, Firefox 16+Opera 12+, Safari 7+ */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    footer {
+        width: 98%;
+        height: auto;
+        margin: 3px auto;
+        padding: 1px;
+        border: 2px solid black;
+        background: #0575E6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradi#021B79, #0575E6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to ri#0575E6);
+        /* W3C, IE 10+/ Edge, Firefox 16+Opera 12+, Safari 7+ */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: #F0F2EB;
+        margin: 5px;
+        padding: 2px;
+    }
+    
+    nav a:hover {
+        background-color: #FF4242;
+        border: 2px solid white;
+        color: white;
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: black;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: #F0F2EB;
+        margin: 5px;
+        padding: 2px;
+    }
+    
+    footer a:hover {
+        background-color: #FF4242;
+        border: 2px solid white;
+        color: white;
+    }
+    
+    header img {
+        width: 20%;
+        border: 3px solid black;
+        margin: 3px;
+        padding-bottom: 3px;
+        border-radius: 10px;
+    }
+    
+    #principal section article {
+        margin: 5px;
+        padding: 5px;
+        box-sizing: border-box;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    #principal section article div img {
+        width: 75%;
+        margin: 5px auto;
+        padding: 5px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    
+    #principal section article .internocontenido {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #principal aside div img {
+        width: 40%;
+    }
+    
+    #principal section article .internoimagenes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #principal section article div .title {
+        font-family: arial-black, sans-serif;
+        font-size: 30pt;
+    }
+    
+    #principal section article div .text {
+        font-family: arial, sans-serif;
+        font-size: 12pt;
+        margin-bottom: 20px;
+    }
+    
+    #principal section article div a {
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: #FF4242;
+        margin: 5px auto;
+        padding: 5px;
+    }
+    
+    #principal section article div a:hover {
+        background-color: #F0F2EB;
+        border: 2px solid black;
+        color: black;
+    }
+    
+    header .headertitles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .headertitles .titlesite {
+        font-family: impact, sans-serif;
+        font-size: 50pt;
+    }
+    
+    header .headertitles .subtitlesite {
+        font-family: arial, sans-serif;
+        font-size: 20pt;
+    }
+    
+    footer .texto p {
+        font-family: arial, sans-serif;
+        font-size: 16pt;
+    }
+    
+    #principal aside .siguenos img {
+        border: 3px solid white;
+        margin: 3px auto;
+        padding: 3px;
+        border-radius: 10px;
+    }
+    
+    #principal aside .alianzas img {
+        border: 3px solid white;
+        margin: 3px auto;
+        padding: 3px;
+        border-radius: 10px;
+    }
+    
+    #principal aside .siguenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #principal aside .alianzas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .texto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .submenu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media screen and (max-width: 576px) {
+        header {
+            flex-direction: column;
+        }
+        header .headertitles .titlesite {
+            font-family: impact, sans-serif;
+            font-size: 19pt;
+        }
+        header .headertitles .subtitlesite {
+            font-family: arial, sans-serif;
+            font-size: 17pt;
+        }
+        header img {
+            width: 200px;
+            height: 200px;
+        }
+        nav {
+            flex-direction: column;
+        }
+        nav a {
+            font-size: 18pt;
+            text-align: center;
+            height: 30px;
+        }
+        #principal {
+            flex-direction: column;
+        }
+        #principal section {
+            width: 100%;
+            flex-direction: column;
+        }
+        #principal aside {
+            width: 100%;
+        }
+        #principal section article {
+            flex-direction: column;
+        }
+        footer {
+            flex-direction: column;
+        }
+        footer .texto {
+            flex-direction: column;
+        }
+        footer .submenu {
+            flex-direction: column;
+        }
+        footer .submenu a {
+            font-size: 18px;
+            text-align: center;
+            height: 30px;
+        }

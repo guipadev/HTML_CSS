@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Scope de variables
+        Sass => Bloque de codigo, las variables son estaticas (Se compilan a un valor CSS)
+        CSS => DOM (Herencia), las variables son dinámicas (Son interpretadas por tiempo real por el browser)
+
+        OPeraciones con variables
+        CSS Calc() es interpretado por el navegador
+        Sass Devuelve valores estaticos
+        
+        /*Sass
+        $color: green;
+        $bg: yellow;
+
+        @mixin from($size) {
+            @media screen and (min-width: #{$size}){
+                @content;
+            }
+        }
+
+        body {
+            background-color: $color;
+        }
+
+
+        @media screen and (min-width: 1024px) {
+                --bg:red;
+            }
+        */
+
+        /*CSS*/
+        :root {
+            --color:#da8c8caf;
+            --bg:yellow;
+        }
+
+        @media screen and (min-width: 1024px) {
+                :root {
+                    --color: blue;
+                }
+            }
+
+        body {
+            background-color: var(--color);
+        }
+
+        
+
+        .button {
+            background-color: var(--bg);
+        }
+
+        .button-success {
+            --bg: red;
+        }
+
+        .button-error {
+            --width: 20%;
+            --bg: white;
+            width: calc(calc(var(--width)*4)/3);
+        }
+
+    </style>
+
+    <script>
+        //const html = document.documentElement;    acceder al html
+        //const body = document.body;               acceder al DOM
+
+        //Reescribir una variable
+        document.documentElement.style.setProperty('--color', 'orange')
+
+    </script>
+
+</head>
+<body>
+
+    <div class="button">Hola</div>
+    <div class="button button-success">Hola</div>
+    <div class="button button-error">Hola</div>
+    
+</body>
+</html>

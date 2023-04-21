@@ -1,0 +1,85 @@
+/*General*/
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/*Menu*/
+
+.menu {
+    background-color: #8f858596;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #302f2d;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #c6d821;
+    color: rgb(201, 21, 21);
+}
+
+
+/*Lista*/
+
+.lista {
+    margin-bottom: 20px;
+}
+
+.lista li {
+    border: 1px solid #999;
+    border-top: transparent;
+    width: 180px;
+}
+
+.lista li a {
+    color: #999;
+    display: block;
+    padding: 10px 0px 10px 10px;
+    text-decoration: none;
+}
+
+.lista li:first-child {
+    /*Afecta al primer hijo de la lista*/
+    border-top: 1px solid #999;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.lista li:last-child {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.lista li:nth-child(odd) {
+    /*Seleccione los impares de esta lista*/
+    background-color: #c6d82193;
+}
+
+
+/*Redes Sociales*/
+
+.redes li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #00aced;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.redes li a {
+    font-size: 24px;
+    color: #fff;
+    line-height: 50px;
+}

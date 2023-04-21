@@ -1,0 +1,48 @@
+body {
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+#contenido {
+	margin-left: 15px;
+	margin-top: 15px;
+	border: 1px dashed #999;
+	border-right: none;
+	border-bottom: none;
+}
+
+h1 {
+	font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	border-bottom: 1px dashed #999;
+	padding: 5px 0 5px 8px;
+	color: #14556b;
+}
+
+p{
+	font: normal 2.4em Verdana, Arial;
+	margin: 10px 8px;
+}
+
+.figura img{
+	border:1px solid #826666;
+	padding:10px;
+}
+
+.figura{
+	float: right;
+	width: 220px;
+	margin: 15px 10px 5px 10px;
+}
+
+.figura p{
+	font: bold 1em Verdana, Genovena;
+	Color:#E05555;
+	text-align: center;
+	background-color: #6EDB94;
+	border: 1px dashed #3A42DA;
+	padding: 5px;
+	margin: 10px 0 0 0;
+}
+

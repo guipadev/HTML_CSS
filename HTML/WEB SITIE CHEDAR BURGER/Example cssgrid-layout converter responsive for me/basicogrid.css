@@ -1,0 +1,56 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4em 8em 1fr 4em;
+    grid-gap: 1em;
+    background: grey;
+}
+
+header {
+    background: red;
+    grid-column: 1 / span 12;
+    /*Ocupa columna 1 a la 12*/
+}
+
+aside {
+    background: green;
+    grid-row: 3;
+    /*Se ubica en la 3 fila*/
+    grid-column: 10 / span 3;
+    /*Empieza 1 columna hasta la 3*/
+}
+
+main {
+    background: blue;
+    grid-row: 3;
+    grid-column: span 9;
+    /*ocupa el resto de las columnas disponibles de la 4 a la 12*/
+}
+
+footer {
+    background: yellow;
+    grid-column: span 12;
+    /*Ocupa todo la fila 4 y sus columnas*/
+}
+
+.feature {
+    background: violet;
+    grid-column: span 4;
+    /*Son 12 columnas, entonces cada uno ocupa de a 4*/
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: black;
+    }
+    .contenedor {
+        grid-template-areas: "header     header      header" "aside  aside   aside" "sidebar    sidebar     sidebar" "widget-1   widget-1    widget-2" "footer     footer      footer";
+    }
+}

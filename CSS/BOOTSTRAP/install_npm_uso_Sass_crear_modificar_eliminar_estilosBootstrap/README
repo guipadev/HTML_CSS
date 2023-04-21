@@ -1,0 +1,8 @@
+#Iniciar un proyecto
+npm init
+
+#Instalar bootstrap npm
+npm install bootstrap
+
+#Opcion Instalar bootstrap con yarn
+yarn add bootstrap

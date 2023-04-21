@@ -1,0 +1,106 @@
+/* reset css para que el html no tome ningun estilo del browser */
+hmtl,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,pre,code,address,form,fieldset{
+    padding: 0%;
+    margin: 0%;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+
+ul{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+
+img{
+    border: 0;
+}
+/*Hasta aqui termina el reset css */
+
+body{
+    background: linear-gradient(to right, #38ef7d, #11998e); 
+    color: black;
+    font-family: 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido .parrafo,
+.contenedor .contenido .titulos,
+.contenedor .sidebar,
+.contenedor .footer{
+    background: floralwhite;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header{
+    background: #00416A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFE000, #799F0C, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(29, 27, 27);
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.contenedor .contenido{
+    grid-column: span 2;
+}
+
+.contenedor .sidebar{
+    grid-column: 3 / 4;
+    background: lawngreen;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    grid-row: span 2;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2{
+    background-color: rgb(51, 224, 216);
+    color: rgb(80, 74, 69);
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .footer{
+    background: rgb(194, 30, 30);
+    color: rgb(217, 233, 232);
+    grid-column: span 3;   
+}
+
+
+@media screen and (max-width: 768px){
+    .contenedor .contenido{
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .sidebar{
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .widget-1{
+        grid-column: span 2;
+    }
+}

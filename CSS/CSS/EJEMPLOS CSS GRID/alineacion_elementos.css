@@ -1,0 +1,19 @@
+.contenedor{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    
+    /*Alinea Horizontalmente*/
+    justify-items: start;   /* esta la opcion de auto, stretch, end, center */
+
+    /*Alinea verticalmente*/
+    align-items: start;
+}
+
+.contenedor .contenido{
+    background: darkorange;
+    justify-self: stretch;
+    align-self: stretch;
+
+}

@@ -1,0 +1,23 @@
+<p> Los campos obligatorios van seguidos de <abbr title = "required"> * </abbr>. </p>
+
+<! - Entonces esto: ->
+<div>
+  <label for = "username"> Nombre: </label>
+  <input type = "text" name = "username">
+  <label for = "username"> <abbr title = "required" aria-label = "required"> * </abbr> </label>
+</div>
+
+<! - sería mejor hacerlo así: ->
+<div>
+  <label for = "username">
+    <span> Nombre: </span>
+    <input id = "username" type = "text" name = "username">
+    <abbr title = "required" aria-label = "required"> * </abbr>
+  </label>
+</div>
+
+<! - Pero esto es probablemente lo mejor: ->
+<div>
+  <label for = "username"> Nombre: <abbr title = "required" aria-label = "required"> * </abbr> </label>
+  <input id = "username" type = "text" name = "username">
+</div>

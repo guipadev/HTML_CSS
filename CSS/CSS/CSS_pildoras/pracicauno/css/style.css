@@ -1,0 +1,33 @@
+h1{text-align:center; 
+    color: rgb(158, 136, 80);}
+
+p{font-family: Arial, Helvetica, sans-serif; 
+    color: goldenrod; }
+
+body{background-color:palegreen }
+
+/* selector de clase, comienza por punto */
+.miestilo{color: rgb(151, 95, 85);
+        font-size: larger;}
+
+/* selector ID, comienza por # */
+#tabla{
+        background-color: red;
+        border-color: yellow;
+}
+
+/* selector por grupo separa los elementos por coma */
+h2,h3{color: teal;
+     }
+
+/* selector universal inicia con * y los estilos que apliques es para toda la pagina
+en vez de elegir el selector del grupo, y se aplicas a todas las hojas web, ejemplo
+
+*{
+    background-color: red;
+    border-color: yellow;
+}
+
+/*   aplicar estilo espeficiamente a una lista  */
+li a{
+    color:red}

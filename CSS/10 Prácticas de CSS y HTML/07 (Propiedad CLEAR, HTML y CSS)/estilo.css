@@ -1,0 +1,29 @@
+.contenedor {
+    padding: 5px;
+    width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+.img {
+    background-color: #666;
+    height: 180px;
+}
+
+.col-nivel1 {
+    margin: 5px;
+    width: 380px;
+    float: left;
+}
+
+.col-nivel2 {
+    margin: 5px;
+    width: 195px;
+    float: left;
+}
+
+.clear:after {
+    content: " ";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        background: #000000;
+        color: #ffffff;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Roboto Mono", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Single File Upload</h1>
+      <input type="file" id="file-uploader" />
+      <p>Upload a file and see the output in browser console</p>
+      <p id="feedback"></p>
+    </div>
+    <script>
+      const fileUploader = document.getElementById("file-uploader");
+
+      fileUploader.addEventListener("change", (event) => {
+        const files = event.target.files;
+        console.log("files", files);
+
+        const feedback = document.getElementById("feedback");
+        const msg = `File ${files[0].name} uploaded successfully!`;
+        feedback.innerHTML = msg;
+      });
+    </script>
+  </body>
+</html>

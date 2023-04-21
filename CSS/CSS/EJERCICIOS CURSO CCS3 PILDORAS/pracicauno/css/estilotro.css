@@ -1,0 +1,28 @@
+/*
+link: en reposo
+visited: cuando a visitado
+hover: se pasa el raton x encima
+active: cuando se esta haciendo clip
+
+para dar estilo a unos estados y otros en CSS
+a esto se le llama
+pseudo clases o pseudo elementos
+
+Y se debe utilizar en el siguiente orden:
+*/
+a:link{
+    color: red;
+        }
+
+
+a:visited{
+    color:green;
+        }
+
+a:hover{
+    color:rebeccapurple;
+        }
+
+a:active{
+    color:rgb(177, 218, 31);
+        }

@@ -1,0 +1,231 @@
+Introducción
+La capacidad de cargar archivos es un requisito clave para muchas aplicaciones web y móviles. Desde cargar su foto en las redes sociales hasta publicar su currículum en el sitio web de un portal de empleo, file upload está en todas partes.
+
+Como desarrollador web, debemos saber que HTML brinda soporte para la carga de archivos nativos con un poco de ayuda de JavaScript. Con HTML5 File API se agrega al DOM. Usando eso, podemos leer el FileList y el File Objeto dentro de él. Esto resuelve múltiples casos de uso con archivos, es decir, cargarlos localmente o enviarlos a través de la red a un servidor para su procesamiento, etc.
+
+En este artículo, analizaremos 10 de estos usos de la compatibilidad con la carga de archivos HTML. Esperamos que te sea útil.
+
+TL;RD
+En cualquier momento, si desea jugar con estas file uploadfunciones, puede encontrarlas desde aquí,
+
+Demostración de carga de archivos HTML: https://html-file-upload.netlify.app/
+El código fuente de la demostración está en mi repositorio de Github. ✋ Siéntase libre de seguir mientras mantengo el código actualizado con ejemplos. Por favor, dé un ⭐ si lo encuentra útil.
+
+Repositorio de código fuente: https://github.com/atapas/html-file-upload
+1. Carga de archivos simple
+Podemos especificar el tipo de entrada filepara usar la funcionalidad de carga de archivos en una aplicación web.
+
+
+COPIAR
+<input type="file" id="file-uploader">
+Un tipo de archivo de entrada permite a los usuarios cargar uno o más archivos con un botón. Por defecto, permite subir un único archivo utilizando el navegador de archivos nativo del sistema operativo.
+
+En una carga exitosa, File APIhace posible leer el Fileobjeto usando un código JavaScript simple. Para leer el Fileobjeto, necesitamos escuchar el changeevento del cargador de archivos.
+
+Primero, obtenga la instancia del cargador de archivos por id,
+
+
+COPIAR
+const fileUploader = document.getElementById('file-uploader');
+Luego agregue un changedetector de eventos para leer el objeto de archivo cuando se complete la carga. Obtenemos la información del archivo cargado de la event.target.filespropiedad.
+
+
+COPIAR
+fileUploader.addEventListener('change', (event) => {
+  const files = event.target.files;
+  console.log('files', files);
+});
+Observe el resultado en la consola del navegador. Tenga en cuenta la FileListmatriz con el Fileobjeto que tiene toda la información de metadatos sobre el archivo cargado.
+
+2. Múltiples cargas de archivos
+Podemos subir varios archivos a la vez. Para hacer eso, solo necesitamos agregar un atributo llamado multiplea la etiqueta del archivo de entrada.
+
+
+COPIAR
+<input type="file" id="file-uploader" multiple />
+Ahora, el explorador de archivos le permitirá cargar uno o más archivos para cargar. Al igual que en el ejemplo anterior, puede agregar un changecontrolador de eventos para capturar la información sobre los archivos cargados. ¿Te has dado cuenta de que the FileListes una matriz? Correcto, para la carga de multiplearchivos, la matriz tendrá información como,
+
+3. Conozca los metadatos de los archivos
+Cada vez que cargamos un archivo, el Fileobjeto tiene la información de metadatos como el nombre del archivo, el tamaño, la hora de la última actualización, el tipo, etc. Esta información puede ser útil para validaciones posteriores, toma de decisiones.
+
+
+COPIAR
+// Get the file uploader by id
+const fileUploader = document.getElementById('file-uploader');
+
+// Listen to the change event and read metadata
+fileUploader.addEventListener('change', (event) => {
+  // Get the FileList array
+  const files = event.target.files;
+
+  // Loop through the files and get metadata
+  for (const file of files) {
+    const name = file.name;
+    const type = file.type ? file.type: 'NA';
+    const size = file.size;
+    const lastModified = file.lastModified;
+    console.log({ file, name, type, size, lastModified });
+  }
+});
+Aquí está la salida para la carga de un solo archivo,
+
+4. Conozca la acceptpropiedad del archivo
+Podemos usar el acceptatributo para limitar el tipo de archivos a cargar. Es posible que desee mostrar solo los tipos de imágenes permitidos para explorar cuando un usuario carga una imagen de perfil.
+
+
+COPIAR
+<input type="file" id="file-uploader" accept=".jpg, .png" multiple>
+En el código anterior, el explorador de archivos solo permitirá los archivos con la extensión jpgy png.
+
+Tenga en cuenta que, en este caso, el explorador de archivos establece automáticamente el tipo de selección de archivos como personalizado en lugar de todo. Sin embargo, siempre puede volver a cambiarlo a todos los archivos, si es necesario.
+
+5. Administrar el contenido del archivo
+Es posible que desee mostrar el contenido del archivo después de cargarlo correctamente. Para las imágenes de perfil, será confuso si no mostramos la imagen cargada al usuario inmediatamente después de la carga.
+
+Podemos usar el FileReaderobjeto para convertir el archivo en una cadena binaria. Luego agregue un loaddetector de eventos para obtener la cadena binaria en la carga exitosa del archivo.
+
+
+COPIAR
+// Get the instance of the FileReader
+const reader = new FileReader();
+
+fileUploader.addEventListener('change', (event) => {
+  const files = event.target.files;
+  const file = files[0];
+
+  // Get the file object after upload and read the
+  // data as URL binary string
+  reader.readAsDataURL(file);
+
+  // Once loaded, do something with the string
+  reader.addEventListener('load', (event) => {
+    // Here we are creating an image tag and adding
+    // an image to it.
+    const img = document.createElement('img');
+    imageGrid.appendChild(img);
+    img.src = event.target.result;
+    img.alt = file.name;
+  });
+});
+
+6. Validar el tamaño del archivo
+Como hemos visto, podemos leer los metadatos de tamaño de un archivo, en realidad podemos usarlo para una validación de tamaño de archivo. Puede permitir que los usuarios carguen un archivo de imagen de hasta 1 MB. Veamos cómo lograrlo.
+
+
+COPIAR
+// Listener for file upload change event
+fileUploader.addEventListener('change', (event) => {
+  // Read the file size
+  const file = event.target.files[0];
+  const size = file.size;
+
+  let msg = '';
+
+ // Check if the file size is bigger than 1MB and prepare a message.
+  if (size > 1024 * 1024) {
+      msg = `<span style="color:red;">The allowed file size is 1MB. The file you are trying to upload is of ${returnFileSize(size)}</span>`;
+  } else {
+      msg = `<span style="color:green;"> A ${returnFileSize(size)} file has been uploaded successfully. </span>`;
+  }
+
+  // Show the message to the user
+  feedback.innerHTML = msg;
+});
+
+
+7. Mostrar el progreso de carga de archivos
+La mejor usabilidad es informar a los usuarios sobre el progreso de la carga de un archivo. Ahora conocemos el FileReadery el evento para leer y cargar el archivo.
+
+
+COPIAR
+const reader = new FileReader();
+El FileReadertiene otro evento llamado, progresspara saber cuanto se ha cargado. Podemos usar la progressetiqueta de HTML5 para crear una barra de progreso con esta información.
+
+
+COPIAR
+reader.addEventListener('progress', (event) => {
+  if (event.loaded && event.total) {
+    // Calculate the percentage completed
+    const percent = (event.loaded / event.total) * 100;
+    // Set the value to the progress component
+    progress.value = percent;
+  }
+});
+¿Qué tal si intenta cargar un archivo más grande y ve la barra de progreso funcionando en CodePen a continuación? Darle una oportunidad.
+
+8. ¿Qué hay de la carga del directorio?
+¿Podemos subir un directorio completo? Bueno, es posible pero con algunas limitaciones. Hay un atributo no estándar (al menos, al escribir este artículo) llamado, webkitdirectoryque nos permite cargar un directorio completo.
+
+Aunque originalmente se implementó solo para navegadores basados ​​en WebKit, webkitdirectory también se puede usar en Microsoft Edge, así como en Firefox 50 y versiones posteriores. Sin embargo, a pesar de que tiene un soporte relativamente amplio, todavía no es estándar y no debe usarse a menos que no tenga otra alternativa.
+
+Puede especificar este atributo como,
+
+
+COPIAR
+<input type="file" id="file-uploader" webkitdirectory />
+Esto le permitirá seleccionar una carpeta (también conocida como directorio),
+
+El usuario debe proporcionar una confirmación para cargar un directorio,
+
+Una vez que el usuario hace clic en el botón Cargar, se lleva a cabo la carga. Un punto importante a tener en cuenta aquí. La FileListmatriz tendrá información sobre todos los archivos en el directorio cargado como una estructura plana. Pero la clave es que, para cada uno de los Fileobjetos, el webkitRelativePathatributo tendrá la ruta del directorio.
+
+Por ejemplo, consideremos un maindirectorio y otras carpetas y archivos debajo de él,
+
+Ahora los Fileobjetos tendrán el webkitRelativePathpoblado como,
+
+9. Vamos a arrastrar, soltar y subir
+No admitir arrastrar y soltar para cargar archivos es un poco anticuado, ¿no es así? Veamos cómo lograrlo con unos simples pasos.
+
+Primero, cree una zona de colocación y, opcionalmente, una sección para mostrar el contenido del archivo cargado. Usaremos una imagen como archivo para arrastrar y soltar aquí.
+
+<div id="container">
+  <h1>Drag & Drop an Image</h1>
+  <div id="drop-zone">
+    DROP HERE
+  </div>
+
+  <div id="content">
+    Your image to appear here..
+  </div>
+
+</div>
+Obtenga la zona de descenso y las áreas de contenido por sus respectivos ID.
+
+
+COPIAR
+ const dropZone = document.getElementById('drop-zone');
+ const content = document.getElementById('content');
+Agregue un dragovercontrolador de eventos para mostrar el efecto de algo que se va a copiar,
+
+
+COPIAR
+dropZone.addEventListener('dragover', event => {
+  event.stopPropagation();
+  event.preventDefault();
+  event.dataTransfer.dropEffect = 'copy';
+});
+
+A continuación, defina lo que queremos hacer cuando se suelte la imagen. Necesitaremos un dropdetector de eventos para manejar eso.
+
+
+COPIAR
+dropZone.addEventListener('drop', event => {
+  // Get the files
+  const files = event.dataTransfer.files;
+
+// Now we can do everything possible to show the
+// file content in an HTML element like, DIV
+});
+Intente arrastrar y soltar un archivo de imagen en el ejemplo de CodePen a continuación y vea cómo funciona. No olvide ver el código para renderizar la imagen soltada también.
+
+10. Manejar archivos con objectURL
+Hay un método especial llamado URL.createObjectURL()para crear una URL única a partir del archivo. También puede liberarlo usando el URL.revokeObjectURL()método.
+
+El DOM URL.createObjectURL()y URL.revokeObjectURL()los métodos le permiten crear cadenas de URL simples que se pueden usar para hacer referencia a cualquier dato al que se pueda hacer referencia mediante un objeto de archivo DOM, incluidos los archivos locales en la computadora del usuario.
+
+Un uso simple de la URL del objeto es,
+
+
+COPIAR
+img.src = URL.createObjectURL(file);
+Use este CodePen para explorar más la URL del objeto. Sugerencia: compare este enfoque con el enfoque mencionado anteriormente en el n.° 5.

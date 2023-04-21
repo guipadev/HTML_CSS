@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn-item {
+    background: blueviolet;
+    display: block;
+    color: wheat;
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(167, 166, 166, 0.5);
+}
+
+.item-content {
+    background: rosybrown;
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+}
+
+.active + .item-content {
+    max-height: 1000px;
+    padding: 10px;
+    opacity: 1;
+}
+
+.btn-item.active {
+   background-color: blueviolet; 
+}
+
+.btn-item::after {
+    content: "\002b";
+    float: right;
+}
+
+.btn-item.active::after {
+    content: "\02212";
+}

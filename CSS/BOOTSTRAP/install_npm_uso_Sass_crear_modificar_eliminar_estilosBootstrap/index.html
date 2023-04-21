@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <h1>Hola programadores</h1>
+
+    <button class="btn btn-primary btn-lg">Pulsar</button>
+    
+    <div class="alert alert-primary btn-lg" role="alert">
+        Una simple alerta primaria, validando la modificación del color primario!!
+    </div>
+
+    <span class="badge bg-primary"> 
+        Validando el cambio de color primario
+    </span>
+
+
+    <button class="btn btn-custom-color btn-lg">Brobando el nuevo color creado</button>
+    
+    <div class="alert alert-custom-color btn-lg" role="alert">
+        Brobando nuevamente el color creado!!
+    </div>
+
+    <div className="accordion" id="accordionExample">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="headingOne">
+            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ¿Tienes dudas?
+            </button>
+          </h2>
+          <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div className="accordion-body">
+
+            <div aria-label="enviar a email" className="email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>
+                <a href="https://" Target="_blank">
+                    <span className="fa_text">  Enviar correo</span> 
+                </a>
+            </div>
+                
+            <div aria-label="acceder a lineas telefonicas" className="telefono">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-headset" viewBox="0 0 16 16">
+                    <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                </svg>
+                <span className="fa_text"> +57 (1) 3078079</span><br/>
+                <span className="fa_text"> 01 - 8000 - 910122</span>
+            </div>
+
+            <div aria-label="acceder a preguntas" className="preguntas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>
+                <a href="https://" Target="_blank">
+                    <span className="fa_text">  Preguntas frecuentes</span> 
+                </a>
+            </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>

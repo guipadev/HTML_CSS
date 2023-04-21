@@ -1,0 +1,41 @@
+/* Modificar variables bootstrap, primero realizar cambios y luego, importar la libreria */
+$primary: #ffd036;
+$danger: #f62f61;
+
+$theme-colors: (
+    "primary": $primary,
+    "danger": $danger
+);
+
+/* Antes de añadir ó eliminar un nuevo elemento/estilo, este caso un nuevo color primero debe ir estas lineas*/
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+/* Crear y añadir un nuevo color */
+// Crear un map, lo podemos llamar como queramos, en este ejemplo le pusimos "custom-color"
+$custom-colors: (
+    "custom-color": rgb(48, 153, 0)
+);
+
+/* Ejemplo eliminar algunos estilos */
+$theme-colors: map-remove($theme-colors: "info", "light", "dark");
+
+// Merge del maps, ose nuestra propiedad $custom-color se esta añadiendo al ya creado $theme-colors
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//Podemos cambiar la lista de grid, las medidas en caso de querer
+/*
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px;
+);
+*/
+
+/*Importar toda la libreria bootstrap*/ /*Tambien se podria importar por partes*/
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+

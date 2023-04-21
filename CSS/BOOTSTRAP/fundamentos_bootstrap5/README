@@ -1,0 +1,37 @@
+#Se realiza proceso creación package.json
+
+npm init -y
+
+#Instalar bootstrap
+
+npm install bootstrap
+
+#Modificar el estilo de fuente
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,700;0,900;1,100&display=swap" rel="stylesheet"> 
+
+#Bucamos en la ruta de bootstrap/scss/_variables.scss el estilo a Modificar
+#Y en nuestro archivo customs.scss le cambiamos el estilo
+
+$font-family-sans-serif: 'Barlow Semi Condensed', sans-serif;
+
+#modificamos el ancho del contenido
+
+$container-max-widths: ( ... )
+
+#Borrar(purgar) CSS que no se esta utilizando, instalamos de forma globlal
+`npm i -g purgecss`
+
+Por ejemplo siguiente <archivo.css> a optimizar --content <contenido que lo esta utilizando>
+`purgecss --css <css> --content <content> [options]`
+
+Esta configuración realizarla en el **package.json en** "scripts" y quedaría: 
+`"build": "purgecss --css css/custom.css --content index.html -o css/reducido.css"`
+
+Ejecutamos por el nombre que pusimos "build" en la terminal `npm run build`
+
+Esto solo se aplica cuando ya terminamos nuestro proyecto.
+
+#Subir y publicarlo https://www.netlify.com/
+Creamos una carpeta con el nombre que queramos "dist"
+Y en esta agregamos para este caso la carpeta css, images y el archivo index.html

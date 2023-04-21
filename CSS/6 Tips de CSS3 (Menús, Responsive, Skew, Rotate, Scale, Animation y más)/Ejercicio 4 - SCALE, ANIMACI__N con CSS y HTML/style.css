@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    background: #b33c3cab;
+}
+
+header {
+    background-image: url('bg-pc.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    background-color: rgb(0, 0, 0, .5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+header a {
+    background: #3b5998;
+    border-bottom: 2px solid #4af017;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 110px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: -55px;
+    /*la mitad de height para quedar centrado y - para que la margenes quede centradas*/
+    transition: .3s all;
+    /*Velocidad transición*/
+    z-index: 1;
+    /*Este elemento este por encima*/
+}
+
+header a:hover {
+    transform: scale(1.2);
+    /*1 es 100% y 2 es un 20% más*/
+    opacity: .9;
+}

@@ -1,0 +1,38 @@
+header {
+  height: 200px;
+  background-color: yellowgreen;
+}
+
+body {
+  background-color: rgba(249, 250, 246, 0.74);
+}
+
+section {
+  height: 200px;
+  background: #db1e1e;
+}
+section h1 {
+  color: #8f7891;
+}
+section h2 {
+  color: #8f7891;
+}
+section p {
+  color: #6a2c70;
+}
+
+footer {
+  height: 200px;
+  background: #2525da;
+}
+footer p {
+  color: #0000;
+}
+footer h4 {
+  color: #8f7891;
+}
+footer h4 a {
+  color: #0000;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+@import "variables";
+@import "header";
+
+body {
+    background-color: rgba(249, 250, 246, 0.74);
+}
+
+section {
+    height: 200px;
+    background: $colorTres;
+    h1 {
+        color: #8f7891;
+    }
+    h2 {
+        color: #8f7891;
+    }
+    p {
+        color: #6a2c70;
+    }
+}
+
+footer {
+    height: 200px;
+    background: $colorCuatro;
+    p {
+        color: #0000;
+    }
+    h4 {
+        color: #8f7891;
+        a {
+            color: #0000;
+        }
+    }
+}
+
